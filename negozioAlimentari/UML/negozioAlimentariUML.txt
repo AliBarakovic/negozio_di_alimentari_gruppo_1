@@ -1,23 +1,42 @@
 @startuml
 class Negozio{
-nome : string
-indirizzo : string
-cilindrata : int
-}
+  nome : string
+  indirizzo : string
+  prodottiDisponibili : Prodotto
 
-class Prodotto {
-nome : string
-codice_univoco : string
-prezzo : int
-quantita_disponibile : int
+  getNProdotti() : Prodotto[]
+  getValProdotti() : Prodotto[]
 }
 
 class Cliente{
-nome : string
-cognome : string
-codice_univoco : string
-saldo_disponibile : string
+  nome : string
+  cognome : string
+  codice : int
+  saldo : int
+  
+  getSaldo() : int
 }
 
+class Prodotto{
+  nome : string
+  codice : int
+  prezzo : int
+  quantitaDisponibile : int
+  dataScadenza : Date
+  
+}
+class prodottoConfezionato{
+tipoConfezione : string
+}
+class prodottoFresco{
+freschezza : bool
+  'se freschezza è true significa che il prodotto è fresco, false significa che il prodotto non è fresco'
+}
 
+Negozio "1..1"--"1..N" Cliente : possiede
+Cliente "1..1" -- "1..N" Prodotto : acquista
+Prodotto "1..N"--"1..1" Negozio : è venduto
+Negozio "1..1"-- "1..N"Prodotto : vende
+prodottoConfezionato <|-- Prodotto
+prodottoFresco <|-- Prodotto
 @enduml
