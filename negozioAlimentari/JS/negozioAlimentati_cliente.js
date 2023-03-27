@@ -27,11 +27,12 @@ class Cliente{
     set cognome(nuovoCognome){         
     this.#m_cognome = nuovoCognome;
     }
-	  set codice(nuovoCodice){
-	  this.#m_codice = nuovoCodice;
-	  }
-	  set saldo(nuovoSaldo){
-	  Math.floor(Math.random() * 101);
-	  }
+    set codice(nuovoCodice){
+    this.#m_codice = nuovoCodice;
+    }
+    set saldo(nuovoSaldo){
+    Math.floor(Math.random() * 101);
+    }
 }     
-	let cliente = new Cliente("ofosfe", "oiswfwef", 987456544, 1);     console.log(cliente);
+	let cliente = new Cliente("ofosfe", "oiswfwef", 987456544, 1);     
+	console.log(cliente);
