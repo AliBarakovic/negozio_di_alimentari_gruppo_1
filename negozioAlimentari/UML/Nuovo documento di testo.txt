@@ -1,0 +1,23 @@
+@startuml
+class Negozio{
+nome : string
+indirizzo : string
+cilindrata : int
+}
+
+class Prodotto {
+nome : string
+codice_univoco : string
+prezzo : int
+quantita_disponibile : int
+}
+
+class Cliente{
+nome : string
+cognome : string
+codice_univoco : string
+saldo_disponibile : string
+}
+
+
+@enduml
