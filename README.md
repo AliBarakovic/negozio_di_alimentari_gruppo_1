@@ -29,7 +29,7 @@ Il negozio deve poter calcolare il valore complessivo dei prodotti disponibili i
 ![Negozio di alimentari](https://github.com/AliBarakovic/negozio_di_alimentari_gruppo_1/blob/main/negozioAlimentari/UML/negozioAlimentariUML.svg?raw=true)
 ## Codice del diagramma UML
 
-``` python
+``` plantUml
 @startuml
 class Negozio{
   nome : string
@@ -39,7 +39,7 @@ class Negozio{
   getNProdotti() : Prodotto[]
   getValProdotti() : Prodotto[]
 }
-@startuml
+
 class Cliente{
   nome : string
   cognome : string
