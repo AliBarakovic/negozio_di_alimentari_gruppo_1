@@ -31,7 +31,6 @@ Il negozio deve poter calcolare il valore complessivo dei prodotti disponibili i
 
 ``` python
 @startuml
-@startuml
 class Negozio{
   nome : string
   indirizzo : string
