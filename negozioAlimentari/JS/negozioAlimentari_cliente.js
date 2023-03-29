@@ -1,9 +1,9 @@
-class Cliente{
+export class Cliente{
      #m_nome;
      #m_cognome;
      #m_codice;
      #m_saldo;
-     constructor(nome, cognome, codice, saldo){
+     constructor(nome, cognome, codice ){
         this.nome = nome;
         this.cognome = cognome;
         this.codice = codice;
@@ -34,5 +34,5 @@ class Cliente{
     Math.floor(Math.random() * 101);
     }
 }     
-	let cliente = new Cliente("ofosfe", "oiswfwef", 987456544, 1);     
-	console.log(cliente);
+	//let cliente = new Cliente("ofosfe", "oiswfwef", 987456544, 1);     
+	//console.log(cliente);
