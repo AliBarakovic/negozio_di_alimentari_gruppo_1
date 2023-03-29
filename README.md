@@ -69,8 +69,8 @@ Negozio "1..1"--"1..N" Cliente : possiede
 Cliente "1..1" -- "1..N" Prodotto : acquista
 Prodotto "1..N"--"1..1" Negozio : è venduto
 Negozio "1..1"-- "1..N"Prodotto : vende
-prodottoConfezionato <|-- Prodotto
-prodottoFresco <|-- Prodotto
+prodottoConfezionato --|> Prodotto
+prodottoFresco --|> Prodotto
 @enduml
 ```
 
