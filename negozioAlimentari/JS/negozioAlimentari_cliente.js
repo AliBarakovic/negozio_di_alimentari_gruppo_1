@@ -7,7 +7,7 @@ export class Cliente{
         this.nome = nome;
         this.cognome = cognome;
         this.codice = codice;
-        this.saldo = saldo;
+        // this.saldo;
     }
     get nome(){
     return this.#m_nome;
