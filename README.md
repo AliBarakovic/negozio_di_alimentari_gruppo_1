@@ -62,10 +62,10 @@ tipoConfezione : string
 }
 class prodottoFresco{
 dataScadenza : Date  
+}
 
 Negozio "1..1"--"1..N" Cliente : possiede
-Cliente "1..1" -- "1..N" Prodotto : acquista
-Prodotto "1..N"--"1..1" Negozio : è venduto
+Cliente "1..N" -- "1..N" Prodotto : acquista
 Negozio "1..1"-- "1..N"Prodotto : vende
 prodottoConfezionato --|> Prodotto
 prodottoFresco --|> Prodotto
