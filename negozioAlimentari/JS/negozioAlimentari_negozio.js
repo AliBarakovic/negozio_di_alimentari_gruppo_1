@@ -1,3 +1,6 @@
+import { any } from "./negozioAlimentari_cliente";
+import { any } from "./negozioAlimentari_prodotto";
+
 class Negozio{
     #m_nome;
     #m_indirizzo;
@@ -20,11 +23,11 @@ class Negozio{
         return this.#m_prodotti_disponibili;
     }
 
-    getNProdotti(){
+    nTotaleProdotti(){
         return this.prodottiDisponibili.length;
     }
 
-    getValProdotti(){
+    valProdotti(){
         
     }
 }
@@ -39,5 +42,5 @@ const negozio = new Negozio("Ciccio","Via del Cavolo",prodottiDisponibili);
 document.writeln("Nome: " + negozio.nome + "<br>");
 document.writeln("Indirizzo: " + negozio.indirizzo + "<br>");
 document.writeln("Prodotti disponibili: " + negozio.prodottiDisponibili + "<br>");
-document.writeln("Lunghezza prodotti disponibili: " + negozio.getNProdotti() + "<br>");
+document.writeln("Lunghezza prodotti disponibili: " + negozio.nTotaleProdotti() + "<br>");
 
