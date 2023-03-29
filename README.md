@@ -34,10 +34,10 @@ Il negozio deve poter calcolare il valore complessivo dei prodotti disponibili i
 class Negozio{
   nome : string
   indirizzo : string
-  prodottiDisponibili : Prodotto
+  prodottiDisponibili : Prodotto[]
 
-  getNProdotti() : Prodotto[]
-  getValProdotti() : Prodotto[]
+  getNProdotti() : int
+  getValProdotti() : int
 }
 
 class Cliente{
