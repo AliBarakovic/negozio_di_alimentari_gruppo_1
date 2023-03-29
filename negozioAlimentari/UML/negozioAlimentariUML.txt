@@ -3,7 +3,6 @@ class Negozio{
   nome : string
   indirizzo : string
   prodottiDisponibili : Prodotto[]
-
   nTotaleProdotti() : int
   valProdotti() : int
 }
