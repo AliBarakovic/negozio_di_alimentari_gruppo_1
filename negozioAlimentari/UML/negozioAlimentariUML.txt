@@ -4,8 +4,8 @@ class Negozio{
   indirizzo : string
   prodottiDisponibili : Prodotto[]
 
-  getNProdotti() : int
-  getValProdotti() : int
+  nTotaleProdotti() : int
+  valProdotti() : int
 }
 
 class Cliente{
