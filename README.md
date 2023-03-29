@@ -54,16 +54,14 @@ class Prodotto{
   codice : int
   prezzo : int
   quantitaDisponibile : int
-  dataScadenza : Date
+
   
 }
 class prodottoConfezionato{
 tipoConfezione : string
 }
 class prodottoFresco{
-freschezza : bool
-  'se freschezza è true significa che il prodotto è fresco, false significa che il prodotto non è fresco'
-}
+dataScadenza : Date  
 
 Negozio "1..1"--"1..N" Cliente : possiede
 Cliente "1..1" -- "1..N" Prodotto : acquista
